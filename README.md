@@ -1,35 +1,38 @@
 # Pizzaria 3 em 1
 
-Site institucional e cardápio digital da Pizzaria 3 em 1, desenvolvido com HTML, CSS e JavaScript puro. O projeto apresenta a identidade visual do restaurante, informações comerciais, cardápio, links de delivery, avaliações, localização e formulário de reserva com confirmação pelo WhatsApp.
+Site institucional, cardápio digital e sistema de reserva da Pizzaria 3 em 1, desenvolvido com HTML, CSS e JavaScript puro. O projeto foi organizado para portfólio, GitHub Pages e apresentação profissional, mantendo uma identidade visual premium, acolhedora e comercial.
 
-## Tecnologias utilizadas
+## Link do Projeto
+
+GitHub Pages: https://vinibr07gomes-alt.github.io/Pizzaria31/
+
+## Funcionalidades
+
+- Página inicial com apresentação da pizzaria, história, especialidades, ambiente, rodízios, localização, avaliações e carreiras.
+- Cardápio digital com filtros por categoria, subcategorias de pizzas e busca por sabor.
+- Página de reserva com seleção de pessoas, horário, data e confirmação via WhatsApp.
+- Botões de contato para WhatsApp, iFood, 99 Food, Keeta e Instagram.
+- Layout responsivo para celular, tablet e desktop.
+- SEO com title, description, canonical, Open Graph, Twitter Card e schema JSON-LD na página principal.
+- Imagens locais otimizadas e caminhos relativos compatíveis com GitHub Pages.
+
+## Tecnologias Usadas
 
 - HTML5
 - CSS3
 - JavaScript puro
-- Font Awesome
 - Google Fonts
+- Font Awesome
 - GitHub Pages
 
-## Funcionalidades
-
-- Página inicial com apresentação da pizzaria, rodízios, ambiente, localização, avaliações e carreiras.
-- Cardápio digital com filtros por categoria, subcategorias de pizzas e busca por sabor.
-- Página de reserva com seleção personalizada de pessoas, horário e data.
-- Integração com WhatsApp para pedidos, reservas e candidaturas.
-- Links externos para iFood, 99 Food, Keeta e Instagram.
-- Layout responsivo para celular, tablet e desktop.
-- Metadados de SEO e Open Graph nas páginas principais.
-
-## Estrutura de pastas
+## Estrutura de Pastas
 
 ```text
 PJ1/
 ├── CSS/
 │   ├── style.css
 │   ├── cardapio.css
-│   ├── reserva.css
-│   └── fixer.css
+│   └── reserva.css
 ├── JS/
 │   ├── index.js
 │   ├── cardapio.js
@@ -37,21 +40,23 @@ PJ1/
 │   └── sectionsets.js
 ├── imagens/
 │   ├── drinks/
-│   └── arquivos de imagens do site
+│   └── imagens do site
 ├── index.html
 ├── cardapio.html
 ├── reserva.html
 └── README.md
 ```
 
-## Como executar
+## Como Executar
 
-Abra o arquivo `index.html` diretamente no navegador ou use uma extensão como Live Server no VS Code. Por ser um projeto em HTML, CSS e JavaScript puro, não é necessário instalar dependências.
+Abra o arquivo `index.html` no navegador ou use uma extensão como Live Server no VS Code. O projeto não exige instalação de dependências nem uso de framework.
 
-## Publicação
+## Observações
 
-O projeto está preparado para funcionar no GitHub Pages usando links relativos entre as páginas internas, como `index.html`, `cardapio.html` e `reserva.html`.
+- O site é responsivo e foi pensado para navegação em dispositivos móveis.
+- A pasta `.git` deve permanecer no ambiente de desenvolvimento para controle de versão.
+- Ao gerar um ZIP de entrega, inclua apenas os arquivos do site e deixe a pasta `.git` fora do pacote final.
 
-## Status do projeto
+## Status
 
-Projeto em revisão final, com foco em responsividade, organização de código, acessibilidade básica, SEO e apresentação profissional para portfólio.
+Projeto em revisão final para portfólio, com foco em organização, SEO, acessibilidade, performance e apresentação visual profissional.

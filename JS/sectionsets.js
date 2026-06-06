@@ -4,7 +4,7 @@
   const btnArrow = document.getElementById('btn-arrow');
   const content = document.getElementById('content-extra');
   const icon = btnArrow ? btnArrow.querySelector('i') : null;
-  const emailBtn = document.querySelector('.email-wrap');
+  const emailBtn = document.querySelector('#email .contact-btn');
   const wppBtn = document.getElementById('wppVagaBtn');
   const wppTexto = document.getElementById('wppVagaTexto');
   const checkboxes = document.querySelectorAll('#vagasGrid input[type="checkbox"]');

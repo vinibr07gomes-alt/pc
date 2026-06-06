@@ -5,7 +5,7 @@
   if (heroBg) {
     const heroImg = new Image();
     heroImg.onload = () => heroBg.classList.add('loaded');
-    heroImg.src = 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1600&auto=format&fit=crop';
+    heroImg.src = 'imagens/heroback.avif';
   }
 
   const header = document.getElementById('mainHeader');

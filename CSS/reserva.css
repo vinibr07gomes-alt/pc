@@ -17,7 +17,7 @@
     /* ── BG ── */
     .bg-layer{
       position:fixed;inset:0;z-index:0;
-      background:url("../imagens/fundo.png") center/cover no-repeat;
+      background:url("../imagens/fundo.jpg") center/cover no-repeat;
     }
     .bg-overlay{
       position:fixed;inset:0;z-index:1;

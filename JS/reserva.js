@@ -192,13 +192,16 @@
         var ds = el.getAttribute('data-date');
         var pts = ds.split('/').map(Number);
         calState[p].sel = new Date(pts[2], pts[1] - 1, pts[0]);
-        document.getElementById(p + '-d').value = ds;
-
+        var hiddenDate = document.getElementById(p + '-d');
         var disp = document.getElementById(p + '-dd');
+        if(!hiddenDate || !disp) return;
+
+        hiddenDate.value = ds;
         disp.querySelector('.cal-txt').textContent = ds;
         disp.classList.add('has-val');
         renderCal(p);
-        document.getElementById(p + '-cal').classList.remove('open');
+        var currentCal = document.getElementById(p + '-cal');
+        if(currentCal) currentCal.classList.remove('open');
         disp.classList.remove('open');
       });
     });

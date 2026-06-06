@@ -123,6 +123,7 @@
       pointer-events: none;
       transition: clip-path 0.38s cubic-bezier(0.4, 0, 0.2, 1);
       z-index: 5;
+      overflow: hidden;
     }
 
     .header-search-wrap.open {
@@ -246,6 +247,7 @@
 
     .filter-tabs {
       max-width: 1300px;
+      width: 100%;
       margin: auto;
       padding: 0 20px;
       display: flex;
@@ -379,7 +381,10 @@
 
     .item-card.hidden { display: none; }
 
-    .item-info { flex: 1; }
+    .item-info {
+      flex: 1;
+      min-width: 0;
+    }
 
     .item-name {
       font-weight: 700;
@@ -396,11 +401,16 @@
 
     .item-price {
       color: var(--gold);
-      font-weight: 700;
-      font-size: 18px;
-      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: clamp(24px, 2.6vw, 30px);
+      font-family: 'Bebas Neue', 'Barlow Condensed', sans-serif;
+      letter-spacing: 1px;
+      line-height: 1;
       white-space: nowrap;
       flex-shrink: 0;
+      min-width: 86px;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
     }
 
     .item-badge {
@@ -633,6 +643,15 @@
 
     /* ── Mobile (≤ 640px) ── */
     @media (max-width: 640px) {
+      body,
+      header,
+      .cardapio-hero,
+      .filter-wrap,
+      .content {
+        max-width: 100vw;
+        overflow-x: clip;
+      }
+
       /* Header */
       .header-inner { padding: 10px 14px; height: 58px; gap: 8px; }
       .back-btn { font-size: 15px; letter-spacing: 1px; }
@@ -666,16 +685,25 @@
 
       /* Cards */
       .items-grid { grid-template-columns: 1fr; gap: 12px; }
-      .item-card { padding: 14px 16px; border-radius: 14px; }
+      .item-card {
+        padding: 14px 16px;
+        border-radius: 14px;
+        align-items: center;
+        gap: 12px;
+      }
       .item-name { font-size: 14px; }
-      .item-price { font-size: 16px; }
+      .item-price {
+        font-size: 24px;
+        min-width: 76px;
+        align-self: center;
+      }
 
       /* Drinks */
       .drinks-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
       .drink-card img { height: 130px; }
       .drink-info { padding: 12px 14px; }
       .drink-name { font-size: 13px; }
-      .drink-price { font-size: 17px; }
+      .drink-price { font-size: 24px; }
 
       /* CTA */
       .cta-bottom { padding: 36px 16px; border-radius: 16px; margin-top: 24px; }
@@ -699,6 +727,15 @@
       .back-btn { font-size: 13px; }
       .cardapio-hero h1 { font-size: 28px; }
       .tab-btn { font-size: 10px; padding: 14px 7px; }
+      .item-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .item-price {
+        min-width: 0;
+        text-align: left;
+        align-self: flex-start;
+      }
       .drinks-grid { grid-template-columns: 1fr; }
       .search-inner { padding: 0 12px; gap: 8px; }
       .header-search-wrap input { font-size: 14px; }
@@ -729,6 +766,11 @@
       display: block;
     }
 
+    .wine-card img {
+      object-position: center;
+      background: #160006;
+    }
+
     .drink-info { padding: 16px 18px; }
 
     .drink-name {
@@ -747,9 +789,12 @@
 
     .drink-price {
       color: var(--gold);
-      font-weight: 700;
-      font-size: 20px;
-      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: clamp(24px, 2.6vw, 30px);
+      font-family: 'Bebas Neue', 'Barlow Condensed', sans-serif;
+      line-height: 1;
+      letter-spacing: 1px;
+      font-variant-numeric: tabular-nums;
     }
 
     .drink-hero {
