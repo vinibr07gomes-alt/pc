@@ -92,7 +92,8 @@
     /* ── CARD PRINCIPAL ── */
     .card-main{
       width:100%;max-width:680px;background:var(--black-card);
-      border:1.5px solid var(--border);border-radius:var(--r-card);
+      border:1.5px solid var(--border);
+      border-radius:var(--r-card) var(--r-card) 0 0;
       padding:28px 32px 32px;
       box-shadow:0 32px 80px rgba(0,0,0,.7),0 0 0 1px var(--border),0 0 40px rgba(245,168,0,.14);
       backdrop-filter:blur(20px);position:relative;
@@ -255,7 +256,8 @@
     /* ── INFO BAR ── */
     .info-bar{
       display:flex;width:100%;max-width:680px;
-      background:rgba(8,8,8,.78);border:1.5px solid var(--border);border-top:none;
+      
+      background:rgba(8,8,8,.78);border:1.85px solid var(--border);border-top:none;
       border-radius:0 0 var(--r-card) var(--r-card);
       backdrop-filter:blur(16px);overflow:hidden;
       animation:fadeUp .9s .45s both;margin-bottom:40px;
@@ -265,7 +267,7 @@
     .info-card{flex:1;display:flex;align-items:center;gap:12px;padding:18px 16px;transition:background var(--tr);min-width:0;}
     .info-card:hover{background:rgba(245,168,0,.04);}
     .info-ico{font-size:22px;color:var(--gold);flex-shrink:0;}
-    .info-text{display:flex;flex-direction:column;gap:2px;min-width:0;}
+    .info-text{display:flex;flex-direction:column;gap:2px;min-width:0;cursor:default;}
     .info-title{font-family:var(--font-l);font-size:12px;font-weight:700;letter-spacing:1px;color:var(--white);}
     .info-desc{font-size:11px;color:var(--gray-dim);}
     .info-div{width:1px;background:linear-gradient(to bottom,transparent,rgba(245,168,0,.3),transparent);margin:14px 0;flex-shrink:0;}

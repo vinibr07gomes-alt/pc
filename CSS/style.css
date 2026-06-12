@@ -1341,6 +1341,9 @@
       .loc-btn { justify-content: center; }
       .fab-social-btn img,.ifood-wordmark{width:28px;height:28px;}
       .ifood-wordmark{font-size:10px;}
+      .hero-content{margin-top: 10%;}
+      #sobre{margin-top: 20%;}
+      
     }
 
 /* Estilos específicos do formulário */
