@@ -660,7 +660,7 @@
       .header-logo-wrap { gap: 7px; }
 
       /* A barra de busca já é absolute/full, só ajusta a altura */
-      .header-search-wrap { /* herda top:0 left:0 right:0 bottom:0 — ok */ }
+      /* .header-search-wrap {top:0; left:0; right:0; bottom:0; } */
 
       /* Hero */
       .cardapio-hero { padding: 36px 16px 30px; }
